@@ -3,14 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Split-Flap Desktop</title>
-<meta name="description" content="A desktop split-flap departure board for your calendar and favorite quotes.">
+<title>Split-flap-desktop</title>
+<meta name="description" content="Split-flap-desktop turns your screen into a classic airport-style split-flap board showing your calendar and favorite quotes.">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="page">
   <header class="site-header">
-    <div class="split-flap-mark" aria-hidden="true"><span>S</span><span>F</span><span>D</span></div>
+    <a class="brand" href="index.html">
+      <img class="split-flap-mark" src="assets/logo.svg" width="32" height="32" alt="">
+      <span class="brand-name">Split-flap-desktop</span>
+    </a>
     <nav class="site-nav">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
@@ -19,14 +24,16 @@
   </header>
 
   <main>
-    <h1>Split-Flap Desktop</h1>
-    <p class="tagline">A desktop split-flap departure board for your calendar and your favorite quotes.</p>
+    <h1>Split-flap-desktop</h1>
+    <p class="tagline">What it is: a free desktop app that turns your screen into a classic
+    airport-style split-flap board, showing your calendar and favorite quotes.</p>
 
     <div class="card">
-      <p>Split-Flap Desktop is a free desktop app (Windows, macOS, Linux) that turns your screen into a
-      classic airport-style split-flap board. It rotates through quotes — pulled from a public quotes API
-      or ones you add yourself — and can optionally connect to your Google Calendar so upcoming events
-      preempt the board when they're urgent.</p>
+      <p><strong>Split-flap-desktop</strong> is a free, open-source desktop app for Windows, macOS,
+      and Linux. It renders an animated split-flap (airport departure board style) display on your
+      screen. By default it rotates through quotes — pulled from a public quotes API or ones you add
+      yourself. You can optionally connect your Google Calendar so upcoming events are shown on the
+      board and urgent events preempt the current quote.</p>
     </div>
 
     <h2>Features</h2>
@@ -38,7 +45,7 @@
     </ul>
 
     <h2>Your data stays on your device</h2>
-    <p>Split-Flap Desktop doesn't run its own backend and doesn't have user accounts. If you connect
+    <p>Split-flap-desktop doesn't run its own backend and doesn't have user accounts. If you connect
     Google Calendar, your sign-in tokens are stored in your operating system's own credential store
     (Windows Credential Manager, macOS Keychain, or Linux Secret Service) — never on a server we run.
     See the <a href="privacy.html">Privacy Policy</a> for details.</p>
@@ -50,7 +57,7 @@
   </main>
 
   <footer class="site-footer">
-    <span>&copy; 2026 Split-Flap Desktop</span>
+    <span>&copy; 2026 Split-flap-desktop</span>
     <a href="mailto:jeffjessie@outlook.com">jeffjessie@outlook.com</a>
   </footer>
 </div>
