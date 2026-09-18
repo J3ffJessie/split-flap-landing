@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Split-Flap Display</title>
+<meta name="description" content="Privacy Policy for the Split-Flap Display desktop app.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="split-flap-mark" aria-hidden="true"><span>S</span><span>F</span><span>D</span></div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://github.com/J3ffJessie/split-flap-board">Source</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective: September 18, 2026</p>
+
+    <p>Split-Flap Display ("the app") is a desktop application. This policy explains what data the
+    app accesses and what happens to it. There is no backend server operated by the developer that
+    receives or stores your personal data — everything below happens either on your own device or
+    directly between your device and the third-party service named.</p>
+
+    <h2>Google Calendar (optional)</h2>
+    <p>If you choose to connect Google Calendar in Settings, the app requests
+    <code>https://www.googleapis.com/auth/calendar.readonly</code> access — read-only, so the app
+    cannot create, edit, or delete anything in your calendar. This is used only to show your upcoming
+    events on the split-flap board and to preempt the board for urgent events.</p>
+    <ul>
+      <li>Sign-in uses Google's standard OAuth flow with PKCE, opened in your system browser.</li>
+      <li>Access and refresh tokens are stored in your operating system's own credential store
+        (Windows Credential Manager, macOS Keychain, or Linux Secret Service) — never uploaded to a
+        server the developer controls.</li>
+      <li>Calendar event data fetched from the API is used locally to render the board and is not
+        transmitted anywhere else.</li>
+      <li>You can disconnect at any time from the app's Settings, which deletes the stored tokens from
+        your device, or revoke access directly at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    </ul>
+
+    <h2>Quotes</h2>
+    <p>By default the app fetches quotes from the public <a href="https://zenquotes.io">ZenQuotes</a>
+    API to display on the board. These requests don't include any personal or account information —
+    they're anonymous requests for quote text. Quotes you add yourself (individually or via bulk
+    import) are stored only in the app's local data folder on your device.</p>
+
+    <h2>What we don't do</h2>
+    <ul>
+      <li>No user accounts or sign-up with the developer</li>
+      <li>No analytics, tracking, or advertising SDKs</li>
+      <li>No sale or sharing of your data with third parties beyond the Google and ZenQuotes API calls
+        described above, which are required for the features you opt into</li>
+    </ul>
+
+    <h2>Data retention and deletion</h2>
+    <p>Disconnecting Google Calendar in Settings removes the stored tokens immediately. Uninstalling
+    the app removes its local application data, including the quote cache and any locally-added
+    quotes, from your device.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Split-Flap Display is not directed at children under 13, and we do not knowingly collect
+    information from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at this same URL with a new
+    effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:jeffjessie@outlook.com">jeffjessie@outlook.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Split-Flap Display</span>
+    <a href="mailto:jeffjessie@outlook.com">jeffjessie@outlook.com</a>
+  </footer>
+</div>
+</body>
+</html>
